@@ -11,13 +11,21 @@ import { portfolioData } from "@/lib/data"
 async function getRepoData() {
   try {
     const res = await fetch('https://api.github.com/repos/Pixelshot/portfolio/commits?per_page=1', {
-      next: { revalidate: 60 } // Revalidate every minute for demo purposes, or 3600 for prod
+      next: { revalidate: 10 } // Revalidate every 10 seconds for faster updates
     })
 
-    if (!res.ok) return null
+    console.log('GitHub API Status:', res.status)
+
+    if (!res.ok) {
+      console.error('GitHub API Error:', res.status, res.statusText)
+      return null
+    }
 
     const commits = await res.json()
-    if (!commits || commits.length === 0) return null
+    if (!commits || commits.length === 0) {
+      console.error('No commits found')
+      return null
+    }
 
     const latestCommitDate = new Date(commits[0].commit.author.date)
     const now = new Date()
@@ -34,10 +42,13 @@ async function getRepoData() {
       }
     }
 
-    return {
+    const result = {
       version: `1.${totalCommits}`,
       lastUpdated: diffDays === 0 ? "today" : `${diffDays} days ago`
     }
+
+    console.log('Repo Data:', result)
+    return result
   } catch (error) {
     console.error("Error fetching repo data:", error)
     return null
