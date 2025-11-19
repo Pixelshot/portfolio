@@ -5,7 +5,12 @@ import { portfolioData } from "@/lib/data"
 import { motion } from "framer-motion"
 import { ArrowDown } from "lucide-react"
 
-export function Hero() {
+interface HeroProps {
+    version: string
+    lastUpdated: string
+}
+
+export function Hero({ version, lastUpdated }: HeroProps) {
     return (
         <section className="w-full py-20 md:py-32 flex flex-col justify-center">
             <div className="space-y-6">
@@ -28,8 +33,8 @@ export function Hero() {
                         Download Resume
                     </Button>
                     <div className="text-sm text-muted-foreground">
-                        <p>v2.304</p>
-                        <p>Updated 1,037 days ago</p>
+                        <p>v{version}</p>
+                        <p>Updated {lastUpdated}</p>
                     </div>
                 </div>
             </div>
