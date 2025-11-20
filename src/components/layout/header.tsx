@@ -16,22 +16,28 @@ export function Header() {
                     </Link>
                     <nav className="flex items-center space-x-6 text-sm font-medium">
                         <Link
-                            href="#about"
-                            className="transition-colors hover:text-foreground/80 text-foreground/60"
-                        >
-                            About
-                        </Link>
-                        <Link
                             href="#projects"
                             className="transition-colors hover:text-foreground/80 text-foreground/60"
                         >
                             Projects
                         </Link>
                         <Link
+                            href="#contributions"
+                            className="transition-colors hover:text-foreground/80 text-foreground/60"
+                        >
+                            Contributions
+                        </Link>
+                        <Link
                             href="#experience"
                             className="transition-colors hover:text-foreground/80 text-foreground/60"
                         >
                             Experience
+                        </Link>
+                        <Link
+                            href="#contact"
+                            className="transition-colors hover:text-foreground/80 text-foreground/60"
+                        >
+                            Contact
                         </Link>
                     </nav>
                 </div>

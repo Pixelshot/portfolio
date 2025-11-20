@@ -50,41 +50,62 @@
 }
 
 .dark {
-  /* Pastel Blue Mode (Color Hunt Palette) */
-  /* Palette: #789DBC (Blue), #FFE3E3 (Pink), #FEF9F2 (Cream), #C9E9D2 (Green) */
-  --background: hsl(207 33% 60%);
-  /* Reverted to Original Muted Blue */
+  /* User Requested Palette */
+  /* Primary: #2D3250, Secondary: #424769, Third: #7077A1, Text: #F6B17A */
+
+  --background: hsl(231 28% 25%);
+  /* #2D3250 */
   --foreground: hsl(40 33% 97%);
-  /* Cream #FEF9F2 (Text on Blue BG) */
-  --card: hsl(40 33% 97%);
-  /* Cream Cards */
-  --card-foreground: hsl(225 19% 32%);
-  /* 30% Darker Slate Blue (#414961) */
-  --popover: hsl(40 33% 97%);
-  --popover-foreground: hsl(225 19% 32%);
-  --primary: hsl(0 100% 94%);
-  /* Pale Pink #FFE3E3 */
-  --primary-foreground: hsl(225 19% 32%);
-  --secondary: hsl(137 41% 85%);
-  /* Pale Green #C9E9D2 */
-  --secondary-foreground: hsl(225 19% 32%);
-  --muted: hsl(207 33% 50%);
-  --muted-foreground: hsl(225 19% 36%);
-  /* 20% Darker Muted Text (User Request) */
-  --accent: hsl(137 41% 85%);
-  /* Green Accent */
-  --accent-foreground: hsl(225 19% 32%);
+  /* Keep White/Cream */
+
+  --card: hsl(232 23% 34%);
+  /* #424769 */
+  --card-foreground: hsl(27 87% 72%);
+  /* #F6B17A (Replaces Dark Blue) */
+
+  --popover: hsl(232 23% 34%);
+  /* #424769 */
+  --popover-foreground: hsl(27 87% 72%);
+  /* #F6B17A */
+
+  --primary: hsl(27 87% 72%);
+  /* #F6B17A (Orange Buttons) */
+  --primary-foreground: hsl(231 28% 25%);
+  /* Dark Text on Orange */
+
+  --secondary: hsl(231 22% 54%);
+  /* #7077A1 */
+  --secondary-foreground: hsl(40 33% 97%);
+  /* White on Third */
+
+  --muted: hsl(232 23% 34%);
+  /* #424769 */
+  --muted-foreground: hsl(231 22% 54%);
+  /* #7077A1 */
+
+  --accent: hsl(232 23% 34%);
+  /* #424769 */
+  --accent-foreground: hsl(27 87% 72%);
+  /* #F6B17A */
+
   --destructive: hsl(0 62.8% 30.6%);
   --destructive-foreground: hsl(0 0% 98%);
-  --border: hsl(0 100% 94%);
-  /* Pink Border */
-  --input: hsl(0 100% 94%);
-  --ring: hsl(137 41% 85%);
+
+  --border: hsl(231 22% 54%);
+  /* #7077A1 */
+  --input: hsl(232 23% 34%);
+  /* #424769 */
+  --ring: hsl(27 87% 72%);
+  /* #F6B17A */
 }
 
 @layer base {
   * {
     @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {

@@ -67,7 +67,7 @@ export default async function Home() {
         <Hero version={version} lastUpdated={lastUpdated} />
 
         {/* Featured Projects - Catskills Style */}
-        <section>
+        <section id="projects" className="scroll-mt-24">
           {/* Projects Header */}
           <div className="mb-16">
             <h2 className="text-[5rem] leading-[0.9] font-bold tracking-tight mb-4">
@@ -108,7 +108,7 @@ export default async function Home() {
         </section>
 
         {/* Contributions - Split Layout List */}
-        <section className="space-y-24">
+        <section id="contributions" className="space-y-24 scroll-mt-24">
           <div className="mb-12">
             <h2 className="text-[5rem] leading-[0.9] font-bold tracking-tight mb-4">
               Contributions
@@ -137,7 +137,7 @@ export default async function Home() {
         </section>
 
         {/* Experience - Single Split Section */}
-        <section>
+        <section id="experience" className="scroll-mt-24">
           <div className="mb-12">
             <h2 className="text-[5rem] leading-[0.9] font-bold tracking-tight mb-4">
               Experience
@@ -181,7 +181,9 @@ export default async function Home() {
           </div>
         </section>
       </main>
-      <Footer />
+      <div id="contact" className="scroll-mt-24">
+        <Footer />
+      </div>
     </div>
   )
 }
