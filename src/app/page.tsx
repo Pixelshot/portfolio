@@ -169,7 +169,7 @@ export default async function Home() {
               })()}
             </SocialCard>
             <SocialCard
-              label="Twitter"
+              label="LinkedIn"
               href={portfolioData.personal.socials[2].url}
               className="col-span-1"
             >

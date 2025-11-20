@@ -9,7 +9,7 @@ export const portfolioData = {
         socials: [
             { name: "GitHub", url: "https://github.com/Pixelshot", icon: Github },
             { name: "LinkedIn", url: "https://linkedin.com", icon: Linkedin },
-            { name: "Twitter", url: "https://twitter.com", icon: Twitter },
+            { name: "LinkedIn", url: "https://www.linkedin.com/feed/", icon: Linkedin },
             { name: "Email", url: "mailto:hello@example.com", icon: Mail },
         ],
     },
