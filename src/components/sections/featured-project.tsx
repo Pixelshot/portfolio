@@ -77,7 +77,7 @@ export function FeaturedProject({
                                     src={galleryImages[0]}
                                     alt={`${title} - Light Mode`}
                                     fill
-                                    className="object-cover transition-transform duration-700 hover:scale-105"
+                                    className="object-contain transition-transform duration-700 hover:scale-105"
                                 />
                             </div>
                             <div className="col-span-5 relative aspect-[4/5] w-full overflow-hidden bg-muted border-4 border-[#555879] dark:border-[#EFB6C8]">
@@ -85,7 +85,7 @@ export function FeaturedProject({
                                     src={galleryImages[1]}
                                     alt={`${title} - Dark Mode`}
                                     fill
-                                    className="object-cover transition-transform duration-700 hover:scale-105"
+                                    className="object-contain transition-transform duration-700 hover:scale-105"
                                 />
                             </div>
                         </>

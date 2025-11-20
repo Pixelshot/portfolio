@@ -6,24 +6,36 @@ import { cn } from "@/lib/utils"
 
 export function ExperienceCard() {
     return (
-        <div className="space-y-12 pt-4">
+        <div className="space-y-0 pt-4 -ml-4">
             {portfolioData.experience.map((job, index) => (
-                <div key={index} className="group relative pl-8 border-l border-border/50">
-                    <div className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-primary ring-4 ring-background" />
+                <div key={index} className="group relative grid grid-cols-[260px_auto_1fr] gap-6 items-start pb-12 last:pb-0">
+                    {/* Left side - Period */}
+                    <div className="flex items-start justify-end pt-0.5">
+                        <span className="text-2xl font-bold font-mono whitespace-nowrap">
+                            {job.period}
+                        </span>
+                    </div>
 
-                    <div className="flex flex-col mb-2">
+                    {/* Center - Dot with vertical line */}
+                    <div className="relative flex flex-col items-center h-full min-h-full">
+                        <div className="h-6 w-6 rounded-full bg-primary ring-4 ring-background z-10 flex-shrink-0" />
+                        {index < portfolioData.experience.length - 1 && (
+                            <div className="absolute top-6 left-1/2 -translate-x-px w-px bottom-0 bg-border/50" style={{ height: 'calc(100% + 3rem - 24px)' }} />
+                        )}
+                    </div>
+
+                    {/* Right side - Title, Company, Description */}
+                    <div className="flex flex-col">
                         <h3 className="font-bold text-xl group-hover:text-primary transition-colors">
                             {job.title}
                         </h3>
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1 font-mono">
+                        <div className="text-base text-muted-foreground mt-1 font-mono">
                             <span>{job.company}</span>
-                            <span>•</span>
-                            <span>{job.period}</span>
                         </div>
+                        <p className="text-sm text-muted-foreground leading-relaxed mt-2">
+                            {job.description}
+                        </p>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed max-w-md">
-                        {job.description}
-                    </p>
                 </div>
             ))}
         </div>
