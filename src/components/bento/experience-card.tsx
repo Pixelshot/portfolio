@@ -8,9 +8,9 @@ export function ExperienceCard() {
     return (
         <div className="space-y-0 pt-4">
             {portfolioData.experience.map((job, index) => (
-                <div key={index} className="group relative grid grid-cols-[260px_auto_1fr] gap-6 items-start pb-12 last:pb-0">
+                <div key={index} className="group relative grid grid-cols-[200px_auto_1fr] gap-6 items-start pb-12 last:pb-0">
                     {/* Left side - Period */}
-                    <div className="flex items-start justify-start pt-0.5">
+                    <div className="flex items-center justify-start h-6">
                         <span className="text-2xl font-bold font-mono whitespace-nowrap">
                             {job.period}
                         </span>
