@@ -50,8 +50,8 @@
 }
 
 .dark {
-  /* User Requested Palette */
-  /* Primary: #2D3250, Secondary: #424769, Third: #7077A1, Text: #F6B17A */
+  /* User Requested Palette Update */
+  /* Primary: #2D3250, Secondary: #424769 (Reverted), Third: #7077A1, Text: #FFF2CC (Cream) */
 
   --background: hsl(231 28% 25%);
   /* #2D3250 */
@@ -59,14 +59,14 @@
   /* Keep White/Cream */
 
   --card: hsl(232 23% 34%);
-  /* #424769 */
-  --card-foreground: hsl(27 87% 72%);
-  /* #F6B17A (Replaces Dark Blue) */
+  /* #424769 (Reverted to Lighter Blue) */
+  --card-foreground: hsl(48 100% 90%);
+  /* #FFF2CC (Cream - Replaces Deep Blue) */
 
   --popover: hsl(232 23% 34%);
   /* #424769 */
-  --popover-foreground: hsl(27 87% 72%);
-  /* #F6B17A */
+  --popover-foreground: hsl(48 100% 90%);
+  /* #FFF2CC */
 
   --primary: hsl(27 87% 72%);
   /* #F6B17A (Orange Buttons) */
@@ -74,19 +74,19 @@
   /* Dark Text on Orange */
 
   --secondary: hsl(231 22% 54%);
-  /* #7077A1 */
-  --secondary-foreground: hsl(40 33% 97%);
-  /* White on Third */
+  /* #7077A1 (Third Color - Reverted) */
+  --secondary-foreground: hsl(48 100% 90%);
+  /* #FFF2CC */
 
   --muted: hsl(232 23% 34%);
   /* #424769 */
-  --muted-foreground: hsl(231 22% 54%);
-  /* #7077A1 */
+  --muted-foreground: hsl(48 100% 90%);
+  /* #FFF2CC */
 
   --accent: hsl(232 23% 34%);
   /* #424769 */
-  --accent-foreground: hsl(27 87% 72%);
-  /* #F6B17A */
+  --accent-foreground: hsl(48 100% 90%);
+  /* #FFF2CC */
 
   --destructive: hsl(0 62.8% 30.6%);
   --destructive-foreground: hsl(0 0% 98%);
