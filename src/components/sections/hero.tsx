@@ -18,14 +18,18 @@ export function Hero({ version, lastUpdated }: HeroProps) {
                     {portfolioData.personal.name.split(" ").map((word, i) => (
                         <span key={i} className="block">{word}</span>
                     ))}
-                    <span className="block text-muted-foreground">
-                        {portfolioData.personal.headline}
-                        <motion.span
-                            animate={{ opacity: [0, 1, 0] }}
-                            transition={{ duration: 1, repeat: Infinity }}
-                            className="inline-block ml-1 w-4 h-16 md:h-24 bg-primary align-middle"
-                        />
-                    </span>
+                    {portfolioData.personal.headline.map((line, i) => (
+                        <span key={i} className="block text-muted-foreground">
+                            {line}
+                            {i === portfolioData.personal.headline.length - 1 && (
+                                <motion.span
+                                    animate={{ opacity: [0, 1, 0] }}
+                                    transition={{ duration: 1, repeat: Infinity }}
+                                    className="inline-block ml-1 w-4 h-16 md:h-24 bg-primary align-middle"
+                                />
+                            )}
+                        </span>
+                    ))}
                 </h1>
 
                 <div className="pt-10 flex items-center gap-6">

@@ -2,8 +2,8 @@ import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 export const portfolioData = {
     personal: {
-        name: "The Synthwave Economist",
-        headline: "Optimizing Systems, Creating Worlds.",
+        name: "The Security Economist.",
+        headline: ["Economic Logic,", "Absolute Defence."],
         bio: "Economics major turned CS student (3.8 CGPA). Started coding in 2012. I blend economic efficiency with retro-futurist aesthetics.",
         email: "hello@example.com",
         socials: [
