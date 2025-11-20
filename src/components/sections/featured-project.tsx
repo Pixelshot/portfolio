@@ -21,19 +21,7 @@ export function FeaturedProject({
     liveUrl,
 }: FeaturedProjectProps) {
     return (
-        <div className="w-full">
-            {/* Header / Title Section */}
-            <div className="mb-16">
-                <h2 className="text-[5rem] leading-[0.9] font-bold tracking-tight mb-4">
-                    Projects
-                    <sup className="text-sm font-normal ml-2 border rounded-full px-2 py-1 align-top top-4">9</sup>
-                </h2>
-                <p className="max-w-2xl text-lg text-muted-foreground">
-                    A selection of interior design projects across hospitality, residential, and retail, weaving together brand narrative, artisan craft, and natural, regenerative material selections.
-                </p>
-                <div className="w-full h-px bg-border mt-12 border-dashed" />
-            </div>
-
+        <div className="w-full py-12">
             {/* Project Content - Split Layout */}
             <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
                 {/* Left: Text Content */}
@@ -65,46 +53,71 @@ export function FeaturedProject({
                 </div>
 
                 {/* Right: Image Gallery Grid */}
-                <div className="lg:col-span-7 grid grid-cols-12">
-                    {/* Image 1: Full Width */}
-                    <div className="col-span-12 relative aspect-[4/3] w-full overflow-hidden bg-muted border-4 border-[#555879]">
-                        <Image
-                            src={galleryImages[0]}
-                            alt={`${title} - Main`}
-                            fill
-                            className="object-contain transition-transform duration-700 hover:scale-105"
-                        />
-                    </div>
+                <div className="lg:col-span-7 grid grid-cols-12 gap-4">
+                    {galleryImages.length === 2 ? (
+                        // 2-Image Layout (Asymmetric Side-by-Side 7/5)
+                        <>
+                            <div className="col-span-7 relative aspect-[4/5] w-full overflow-hidden bg-muted border-4 border-[#555879]">
+                                <Image
+                                    src={galleryImages[0]}
+                                    alt={`${title} - Light Mode`}
+                                    fill
+                                    className="object-cover transition-transform duration-700 hover:scale-105"
+                                />
+                            </div>
+                            <div className="col-span-5 relative aspect-[4/5] w-full overflow-hidden bg-muted border-4 border-[#555879]">
+                                <Image
+                                    src={galleryImages[1]}
+                                    alt={`${title} - Dark Mode`}
+                                    fill
+                                    className="object-cover transition-transform duration-700 hover:scale-105"
+                                />
+                            </div>
+                        </>
+                    ) : (
+                        // 4-Image Layout (Mixed Grid)
+                        <>
+                            {/* Image 1: Full Width */}
+                            <div className="col-span-12 relative aspect-[4/3] w-full overflow-hidden bg-muted border-4 border-[#555879]">
+                                <Image
+                                    src={galleryImages[0]}
+                                    alt={`${title} - Main`}
+                                    fill
+                                    className="object-contain transition-transform duration-700 hover:scale-105"
+                                />
+                            </div>
 
-                    {/* Image 2: Larger (Form) */}
-                    <div className="col-span-7 relative aspect-[16/10] w-full overflow-hidden bg-muted border-x-4 border-b-4 border-[#555879]">
-                        <Image
-                            src={galleryImages[1]}
-                            alt={`${title} - Form`}
-                            fill
-                            className="object-contain transition-transform duration-700 hover:scale-105"
-                        />
-                    </div>
+                            {/* Image 2: Larger (Form) */}
+                            <div className="col-span-7 relative aspect-[16/10] w-full overflow-hidden bg-muted border-4 border-[#555879]">
+                                <Image
+                                    src={galleryImages[1]}
+                                    alt={`${title} - Form`}
+                                    fill
+                                    className="object-contain transition-transform duration-700 hover:scale-105"
+                                />
+                            </div>
 
-                    {/* Image 3: Smaller (Processing) */}
-                    <div className="col-span-5 relative h-full w-full overflow-hidden bg-muted border-r-4 border-b-4 border-[#555879]">
-                        <Image
-                            src={galleryImages[2]}
-                            alt={`${title} - Processing`}
-                            fill
-                            className="object-contain transition-transform duration-700 hover:scale-105"
-                        />
-                    </div>
+                            {/* Image 3: Smaller (Processing) */}
+                            <div className="col-span-5 relative h-full w-full overflow-hidden bg-muted border-4 border-[#555879]">
+                                <Image
+                                    src={galleryImages[2]}
+                                    alt={`${title} - Processing`}
+                                    fill
+                                    className="object-contain transition-transform duration-700 hover:scale-105"
+                                />
+                            </div>
 
-                    {/* Image 4: Full Width (Recommendations) */}
-                    <div className="col-span-12 relative aspect-[4/3] w-full overflow-hidden bg-muted border-x-4 border-b-4 border-[#555879]">
-                        <Image
-                            src={galleryImages[3]}
-                            alt={`${title} - Recommendations`}
-                            fill
-                            className="object-contain transition-transform duration-700 hover:scale-105"
-                        />
-                    </div>
+                            {/* Image 4: Full Width (Recommendations) */}
+                            <div className="col-span-12 relative aspect-[4/3] w-full overflow-hidden bg-muted border-4 border-[#555879]">
+                                <Image
+                                    src={galleryImages[3]}
+                                    alt={`${title} - Recommendations`}
+                                    fill
+                                    className="object-contain transition-transform duration-700 hover:scale-105"
+                                />
+                            </div>
+                        </>
+                    )}
                 </div>
             </div>
         </div>

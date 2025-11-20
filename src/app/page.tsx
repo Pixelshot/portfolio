@@ -66,20 +66,45 @@ export default async function Home() {
       <main className="flex-1 container mx-auto p-4 md:p-8 space-y-24">
         <Hero version={version} lastUpdated={lastUpdated} />
 
-        {/* Featured Project - Catskills Style */}
+        {/* Featured Projects - Catskills Style */}
         <section>
-          <FeaturedProject
-            title="AI Trip Planner"
-            description="A multi-agent AI travel assistant powered by content-based filtering and RAG. The system uses TF-IDF for semantic similarity matching and Ollama LLM for intelligent trip recommendations."
-            galleryImages={[
-              "/ai-trip-planner-v2.png",
-              "/ai-trip-planner-form.png",
-              "/ai-trip-planner-processing.png",
-              "/ai-trip-planner-recommendations.png"
-            ]}
-            tags={["Next.js", "TypeScript", "Tailwind CSS", "Ollama", "RAG", "TF-IDF", "AI Agents"]}
-            liveUrl="https://www.g1-ai-trip-planner.dev/"
-          />
+          {/* Projects Header */}
+          <div className="mb-16">
+            <h2 className="text-[5rem] leading-[0.9] font-bold tracking-tight mb-4">
+              Projects
+              <sup className="text-sm font-normal ml-2 border rounded-full px-2 py-1 align-top top-4">2</sup>
+            </h2>
+            <p className="max-w-2xl text-lg text-muted-foreground">
+              A selection of engineering projects demonstrating full-stack capabilities, AI integration, and mobile development expertise.
+            </p>
+            <div className="w-full h-px bg-border mt-12 border-dashed" />
+          </div>
+
+          <div className="space-y-32">
+            <FeaturedProject
+              title="AI Trip Planner"
+              description="A multi-agent AI travel assistant powered by content-based filtering and RAG. The system uses TF-IDF for semantic similarity matching and Ollama LLM for intelligent trip recommendations."
+              galleryImages={[
+                "/ai-trip-planner-v2.png",
+                "/ai-trip-planner-form.png",
+                "/ai-trip-planner-processing.png",
+                "/ai-trip-planner-recommendations.png"
+              ]}
+              tags={["Next.js", "TypeScript", "Tailwind CSS", "Ollama", "RAG", "TF-IDF", "AI Agents"]}
+              liveUrl="https://www.g1-ai-trip-planner.dev/"
+            />
+
+            <FeaturedProject
+              title="Flighty MY"
+              description="A React Native flight tracking app built with Expo and NativeWind. Features real-time flight status, dark mode support, and a beautiful, native-feeling UI."
+              galleryImages={[
+                "/flighty-light.png",
+                "/flighty-dark.png"
+              ]}
+              tags={["React Native", "Expo", "TypeScript", "NativeWind", "Mobile"]}
+              liveUrl="https://github.com/Pixelshot/flighty-my"
+            />
+          </div>
         </section>
 
         {/* Contributions - Split Layout List */}

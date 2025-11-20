@@ -45,12 +45,7 @@ export const portfolioData = {
             ],
             galleryLayout: "side-by-side"
         },
-        {
-            title: "Market Predictor",
-            description: "An ML model predicting stock trends using economic indicators. Built with Python and Scikit-learn.",
-            tags: ["Python", "Machine Learning", "Economics"],
-            link: "https://github.com",
-        },
+
     ],
     experience: [
         {
