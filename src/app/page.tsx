@@ -85,10 +85,10 @@ export default async function Home() {
               title="AI Trip Planner"
               description="A multi-agent AI travel assistant powered by content-based filtering and RAG. The system uses TF-IDF for semantic similarity matching and Ollama LLM for intelligent trip recommendations."
               galleryImages={[
-                "/ai-trip-planner-v2.png",
-                "/ai-trip-planner-form.png",
-                "/ai-trip-planner-processing.png",
-                "/ai-trip-planner-recommendations.png"
+                "/img/ai-trip-planner-v2.png",
+                "/img/ai-trip-planner-form.png",
+                "/img/ai-trip-planner-processing.png",
+                "/img/ai-trip-planner-recommendations.png"
               ]}
               tags={["Next.js", "TypeScript", "Tailwind CSS", "Ollama", "RAG", "TF-IDF", "AI Agents"]}
               liveUrl="https://www.g1-ai-trip-planner.dev/"
@@ -98,8 +98,8 @@ export default async function Home() {
               title="Flighty MY"
               description="A React Native flight tracking app built with Expo and NativeWind. Features real-time flight status, dark mode support, and a beautiful, native-feeling UI."
               galleryImages={[
-                "/flighty-light.png",
-                "/flighty-dark.png"
+                "/img/flighty-light.png",
+                "/img/flighty-dark.png"
               ]}
               tags={["React Native", "Expo", "TypeScript", "NativeWind", "Mobile"]}
               liveUrl="https://github.com/Pixelshot/flighty-my"
@@ -131,7 +131,7 @@ export default async function Home() {
               galleryImages={project.galleryImages}
               galleryLayout={project.galleryLayout as "stacked" | "side-by-side" | undefined}
               // Fallback image if no gallery
-              image={!project.galleryImages ? (index % 2 === 0 ? "/ai-trip-planner-v2.png" : "/ai-trip-planner.png") : undefined}
+              image={!project.galleryImages ? (index % 2 === 0 ? "/img/ai-trip-planner-v2.png" : "/ai-trip-planner.png") : undefined}
             />
           ))}
         </section>

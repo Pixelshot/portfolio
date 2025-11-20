@@ -28,8 +28,8 @@ export const portfolioData = {
             link: "https://github.com/robb0wen/synthwave-vscode",
             linkLabel: "View Extension",
             galleryImages: [
-                "/synthwave-vscode-banner.png",
-                "/synthwave-vscode-code.png"
+                "/img/synthwave-vscode-banner.png",
+                "/img/synthwave-vscode-code.png"
             ],
             galleryLayout: "stacked"
         },
@@ -40,8 +40,8 @@ export const portfolioData = {
             link: "https://docs.astro.build/en/getting-started/",
             linkLabel: "View Documentation",
             galleryImages: [
-                "/astro-docs-repo.png",
-                "/astro-docs-site.png"
+                "/img/astro-docs-repo.png",
+                "/img/astro-docs-site.png"
             ],
             galleryLayout: "side-by-side"
         },
