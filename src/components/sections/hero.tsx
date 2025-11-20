@@ -12,7 +12,7 @@ interface HeroProps {
 
 export function Hero({ version, lastUpdated }: HeroProps) {
     return (
-        <section className="w-full py-20 md:py-32 flex flex-col justify-center">
+        <section className="w-full min-h-[calc(100vh-8rem)] flex flex-col justify-center">
             <div className="space-y-6">
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-tight">
                     {portfolioData.personal.name.split(" ").map((word, i) => (
