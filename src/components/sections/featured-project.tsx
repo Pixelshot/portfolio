@@ -40,6 +40,21 @@ export function FeaturedProject({
                         {description}
                     </p>
 
+                    {/* Technology Used */}
+                    <div className="space-y-4">
+                        <h4 className="text-sm font-mono uppercase tracking-wider text-[#EFB6C8]">
+                            Tech Stack:
+                        </h4>
+                        <div className="space-y-2">
+                            {tags.map((tag, index) => (
+                                <div key={index} className="relative pl-6 border-l border-border/50">
+                                    <div className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-primary ring-4 ring-background" />
+                                    <span className="text-base font-medium">{tag}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
                     <div className="pt-8">
                         <Button
                             variant="link"
