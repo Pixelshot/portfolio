@@ -60,12 +60,18 @@ export function SplitSection({
                     {children}
 
                     {tags && tags.length > 0 && (
-                        <div className="flex flex-wrap gap-2 pt-2">
-                            {tags.map((tag) => (
-                                <span key={tag} className="text-sm text-muted-foreground/60">
-                                    #{tag}
-                                </span>
-                            ))}
+                        <div className="space-y-4 pt-2">
+                            <h4 className="text-sm font-mono uppercase tracking-wider text-[#EFB6C8]">
+                                Tech Stack:
+                            </h4>
+                            <div className="space-y-2">
+                                {tags.map((tag) => (
+                                    <div key={tag} className="relative pl-6 border-l border-border/50">
+                                        <div className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-primary ring-4 ring-background" />
+                                        <span className="text-base font-medium text-muted-foreground">{tag}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     )}
 

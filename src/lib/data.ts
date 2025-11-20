@@ -24,7 +24,7 @@ export const portfolioData = {
         {
             title: "synthwave-vscode",
             description: "A retro-futurist VS Code theme with over 100k installs. Neon dreams for your IDE.",
-            tags: ["TypeScript", "VS Code API", "Design"],
+            tags: ["Open Source", "CSS", "JavaScript", "Extension", "VS Code Theme"],
             link: "https://github.com/robb0wen/synthwave-vscode",
             linkLabel: "View Extension",
             galleryImages: [
@@ -36,7 +36,7 @@ export const portfolioData = {
         {
             title: "withastro/docs",
             description: "Contributed to the official documentation of Astro. Optimized build times and improved accessibility.",
-            tags: ["Astro", "Markdown", "Open Source"],
+            tags: ["Open Source", "Markdown", "Astro", "CSS"],
             link: "https://docs.astro.build/en/getting-started/",
             linkLabel: "View Documentation",
             galleryImages: [
