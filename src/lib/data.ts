@@ -25,13 +25,25 @@ export const portfolioData = {
             title: "synthwave-vscode",
             description: "A retro-futurist VS Code theme with over 100k installs. Neon dreams for your IDE.",
             tags: ["TypeScript", "VS Code API", "Design"],
-            link: "https://github.com",
+            link: "https://github.com/robb0wen/synthwave-vscode",
+            linkLabel: "View Extension",
+            galleryImages: [
+                "/synthwave-vscode-banner.png",
+                "/synthwave-vscode-code.png"
+            ],
+            galleryLayout: "stacked"
         },
         {
             title: "withastro/docs",
             description: "Contributed to the official documentation of Astro. Optimized build times and improved accessibility.",
             tags: ["Astro", "Markdown", "Open Source"],
-            link: "https://github.com",
+            link: "https://docs.astro.build/en/getting-started/",
+            linkLabel: "View Documentation",
+            galleryImages: [
+                "/astro-docs-repo.png",
+                "/astro-docs-site.png"
+            ],
+            galleryLayout: "side-by-side"
         },
         {
             title: "Market Predictor",
@@ -42,13 +54,13 @@ export const portfolioData = {
     ],
     experience: [
         {
-            role: "Frontend Engineer Intern",
+            title: "Frontend Engineer Intern",
             company: "Tech Corp",
             period: "2023 - Present",
             description: "Building the future of finance dashboards. Improved performance by 40%.",
         },
         {
-            role: "Economics Research Assistant",
+            title: "Economics Research Assistant",
             company: "University",
             period: "2021 - 2022",
             description: "Analyzed market data and published a paper on game theory in digital markets.",

@@ -9,12 +9,12 @@ export function Experience() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12">Experience</h2>
                 <div className="grid gap-8">
                     {portfolioData.experience.map((item) => (
-                        <div key={item.role} className="grid gap-2 md:grid-cols-[1fr_3fr]">
+                        <div key={item.title} className="grid gap-2 md:grid-cols-[1fr_3fr]">
                             <div className="text-sm text-muted-foreground">
                                 {item.period}
                             </div>
-                            <div className="grid gap-2">
-                                <h3 className="text-xl font-bold">{item.role}</h3>
+                            <div className="grid gap-1">
+                                <h3 className="font-semibold">{item.title}</h3>
                                 <p className="text-muted-foreground">{item.company}</p>
                                 <p>{item.description}</p>
                             </div>
