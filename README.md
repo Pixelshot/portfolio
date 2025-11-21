@@ -2,7 +2,7 @@
 
 A modern, responsive personal portfolio website designed to showcase professional experience, open-source contributions, and technical projects. Built with performance and aesthetics in mind, it features a dynamic dark-themed UI, bento-grid layouts, and smooth animations.
 
-![Hero Section](/screenshots/hero.png)
+![Hero Section](public/screenshots/hero.png)
 
 ## Tech Stack
 
@@ -18,10 +18,10 @@ This project is built using the following technologies:
 ## Gallery
 
 ### Projects Section
-![Projects Section](/screenshots/projects.png)
+![Projects Section](public/screenshots/projects.png)
 
 ### Footer Section
-![Footer Section](/screenshots/footer.png)
+![Footer Section](public/screenshots/footer.png)
 
 ## Getting Started
 
