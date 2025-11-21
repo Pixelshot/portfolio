@@ -1,6 +1,27 @@
 # The Cyber Economist Portfolio
 
-A personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+A modern, responsive personal portfolio website designed to showcase professional experience, open-source contributions, and technical projects. Built with performance and aesthetics in mind, it features a dynamic dark-themed UI, bento-grid layouts, and smooth animations.
+
+![Hero Section](/screenshots/hero.png)
+
+## Tech Stack
+
+This project is built using the following technologies:
+
+-   **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+-   **Language**: [TypeScript](https://www.typescriptlang.org/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+-   **Animations**: [Framer Motion](https://www.framer.com/motion/)
+-   **Icons**: [Lucide React](https://lucide.dev/)
+-   **Theming**: [next-themes](https://github.com/pacocoursey/next-themes)
+
+## Gallery
+
+### Projects Section
+![Projects Section](/screenshots/projects.png)
+
+### Footer Section
+![Footer Section](/screenshots/footer.png)
 
 ## Getting Started
 
