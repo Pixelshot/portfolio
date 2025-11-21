@@ -44,9 +44,17 @@ export function Footer() {
                     <div className="flex flex-col items-end gap-4">
                         {/* Abstract Graphic Placeholder */}
                         {/* <div className="w-24 h-24 border border-[#E5E5E0]/30 dark:border-[#2D3250]/30 transform rotate-45 mb-4 hidden md:block" /> */}
-                        <span className="text-sm text-[#FFF2C6] dark:text-[#2D3250]/60">
+                        <span className="text-sm text-[#FFF2C6] dark:text-[#2D3250]">
                             © {new Date().getFullYear()} Pixelshot
                         </span>
+                        <a
+                            href="https://github.com/Pixelshot/portfolio"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-[#FFF2C6] dark:text-[#2D3250] hover:text-white dark:hover:opacity-70 transition-colors"
+                        >
+                            Link to Repository
+                        </a>
                     </div>
                 </div>
             </div>
