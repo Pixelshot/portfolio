@@ -11,12 +11,12 @@ export function StackCard({ className, ...props }: StackCardProps) {
     return (
         <Card className={cn("flex flex-col", className)} {...props}>
             <CardHeader>
-                <CardTitle>Tech Stack</CardTitle>
+                <CardTitle className="text-[#7077A1] font-bold dark:text-foreground">Tech Stack</CardTitle>
             </CardHeader>
             <CardContent>
                 <div className="flex flex-wrap gap-2">
                     {portfolioData.skills.map((skill) => (
-                        <Badge key={skill} variant="secondary" className="text-sm py-1 px-3">
+                        <Badge key={skill} variant="secondary" className="text-sm py-1 px-3 text-[#8174A0] dark:text-foreground">
                             {skill}
                         </Badge>
                     ))}

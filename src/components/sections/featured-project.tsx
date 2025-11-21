@@ -42,13 +42,13 @@ export function FeaturedProject({
 
                     {/* Technology Used */}
                     <div className="space-y-4">
-                        <h4 className="text-sm font-mono uppercase tracking-wider text-[#555879] dark:text-[#EFB6C8]">
+                        <h4 className="text-sm font-mono font-bold uppercase tracking-wider text-[#8174A0] dark:text-[#EFB6C8]">
                             Tech Stack:
                         </h4>
                         <div className="space-y-2">
                             {tags.map((tag, index) => (
                                 <div key={index} className="relative pl-6 border-l border-border/50">
-                                    <div className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-primary ring-4 ring-background" />
+                                    <div className="absolute -left-[5px] top-2 h-2.5 w-2.5 rounded-full bg-[#AAC4F5] dark:bg-primary ring-4 ring-background" />
                                     <span className="text-base font-medium">{tag}</span>
                                 </div>
                             ))}
@@ -58,7 +58,7 @@ export function FeaturedProject({
                     <div className="pt-8">
                         <Button
                             variant="link"
-                            className="p-0 h-auto text-lg font-medium hover:no-underline group"
+                            className="p-0 h-auto text-lg font-medium hover:no-underline group text-[#8CA9FF] dark:text-primary"
                             onClick={() => window.open(liveUrl, '_blank')}
                         >
                             View Project
@@ -72,7 +72,7 @@ export function FeaturedProject({
                     {galleryImages.length === 2 ? (
                         // 2-Image Layout (Asymmetric Side-by-Side 7/5)
                         <>
-                            <div className="col-span-7 relative aspect-[4/5] w-full overflow-hidden bg-muted border-4 border-[#555879] dark:border-[#EFB6C8]">
+                            <div className="col-span-7 relative aspect-[4/5] w-full overflow-hidden bg-muted border-4 border-[#8174A0] dark:border-[#EFB6C8]">
                                 <Image
                                     src={galleryImages[0]}
                                     alt={`${title} - Light Mode`}
@@ -80,7 +80,7 @@ export function FeaturedProject({
                                     className="object-contain transition-transform duration-700 hover:scale-105"
                                 />
                             </div>
-                            <div className="col-span-5 relative aspect-[4/5] w-full overflow-hidden bg-muted border-4 border-[#555879] dark:border-[#EFB6C8]">
+                            <div className="col-span-5 relative aspect-[4/5] w-full overflow-hidden bg-muted border-4 border-[#8174A0] dark:border-[#EFB6C8]">
                                 <Image
                                     src={galleryImages[1]}
                                     alt={`${title} - Dark Mode`}
@@ -93,7 +93,7 @@ export function FeaturedProject({
                         // 4-Image Layout (Mixed Grid)
                         <>
                             {/* Image 1: Full Width */}
-                            <div className="col-span-12 relative aspect-[4/3] w-full overflow-hidden bg-muted border-4 border-[#555879] dark:border-[#EFB6C8]">
+                            <div className="col-span-12 relative aspect-[4/3] w-full overflow-hidden bg-muted border-4 border-[#8174A0] dark:border-[#EFB6C8]">
                                 <Image
                                     src={galleryImages[0]}
                                     alt={`${title} - Main`}
@@ -103,7 +103,7 @@ export function FeaturedProject({
                             </div>
 
                             {/* Image 2: Larger (Form) */}
-                            <div className="col-span-7 relative aspect-[16/10] w-full overflow-hidden bg-muted border-4 border-[#555879] dark:border-[#EFB6C8]">
+                            <div className="col-span-7 relative aspect-[16/10] w-full overflow-hidden bg-muted border-4 border-[#8174A0] dark:border-[#EFB6C8]">
                                 <Image
                                     src={galleryImages[1]}
                                     alt={`${title} - Form`}
@@ -113,7 +113,7 @@ export function FeaturedProject({
                             </div>
 
                             {/* Image 3: Smaller (Processing) */}
-                            <div className="col-span-5 relative h-full w-full overflow-hidden bg-muted border-4 border-[#555879] dark:border-[#EFB6C8]">
+                            <div className="col-span-5 relative h-full w-full overflow-hidden bg-muted border-4 border-[#8174A0] dark:border-[#EFB6C8]">
                                 <Image
                                     src={galleryImages[2]}
                                     alt={`${title} - Processing`}
@@ -123,7 +123,7 @@ export function FeaturedProject({
                             </div>
 
                             {/* Image 4: Full Width (Recommendations) */}
-                            <div className="col-span-12 relative aspect-[4/3] w-full overflow-hidden bg-muted border-4 border-[#555879] dark:border-[#EFB6C8]">
+                            <div className="col-span-12 relative aspect-[4/3] w-full overflow-hidden bg-muted border-4 border-[#8174A0] dark:border-[#EFB6C8]">
                                 <Image
                                     src={galleryImages[3]}
                                     alt={`${title} - Recommendations`}

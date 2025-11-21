@@ -25,7 +25,7 @@ export function Hero({ version, lastUpdated }: HeroProps) {
                                 <motion.span
                                     animate={{ opacity: [0, 1, 0] }}
                                     transition={{ duration: 1, repeat: Infinity }}
-                                    className="inline-block ml-1 w-4 h-16 md:h-24 bg-primary align-middle"
+                                    className="inline-block ml-1 w-4 h-16 md:h-24 bg-[#AAC4F5] dark:bg-primary align-middle"
                                 />
                             )}
                         </span>

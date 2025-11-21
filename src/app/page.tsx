@@ -116,6 +116,9 @@ export default async function Home() {
                 {portfolioData.projects.length}
               </sup>
             </h2>
+            <p className="max-w-2xl text-lg text-muted-foreground">
+              Some of the contributions I've made throughout my professional career.
+            </p>
             <div className="w-full h-px bg-border mt-12 border-dashed" />
           </div>
 
@@ -147,7 +150,7 @@ export default async function Home() {
 
           <SplitSection
             title="Career History"
-            description="A timeline of my professional journey, focusing on frontend engineering, economic research, and system optimization."
+            description="A timeline of my educational and professional milestones."
             badge="RESUME"
           >
             <ExperienceCard />

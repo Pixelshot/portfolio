@@ -11,7 +11,14 @@ export function ExperienceCard() {
     const toggleButtonRef = useRef<HTMLDivElement>(null)
     const visibleItems = isExpanded ? portfolioData.experience : portfolioData.experience.slice(0, 4)
 
+    const isFirstRender = useRef(true)
+
     useEffect(() => {
+        if (isFirstRender.current) {
+            isFirstRender.current = false
+            return
+        }
+
         if (toggleButtonRef.current) {
             setTimeout(() => {
                 const element = toggleButtonRef.current
@@ -43,9 +50,9 @@ export function ExperienceCard() {
 
                     {/* Center - Dot with vertical line */}
                     <div className="relative flex flex-col items-center h-full min-h-full">
-                        <div className="h-6 w-6 rounded-full bg-primary ring-4 ring-background z-10 flex-shrink-0" />
+                        <div className="h-6 w-6 rounded-full bg-[#AAC4F5] dark:bg-primary ring-4 ring-background z-10 flex-shrink-0" />
                         {(index < visibleItems.length - 1 || !isExpanded) && (
-                            <div className="absolute top-6 left-1/2 -translate-x-px w-px bottom-0 bg-border/50" style={{ height: 'calc(100% + 3rem - 24px)' }} />
+                            <div className="absolute top-6 left-1/2 -translate-x-px w-px bottom-0 bg-[#AAC4F5] dark:bg-border/50" style={{ height: 'calc(100% + 3rem - 24px)' }} />
                         )}
                     </div>
 
