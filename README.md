@@ -20,6 +20,9 @@ This project is built using the following technologies:
 ### Projects Section
 ![Projects Section](public/screenshots/projects.png)
 
+### Experience Section
+![Experience Section](public/screenshots/experience.png)
+
 ### Footer Section
 ![Footer Section](public/screenshots/footer.png)
 
