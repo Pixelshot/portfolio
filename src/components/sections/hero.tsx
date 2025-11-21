@@ -33,7 +33,7 @@ export function Hero({ version, lastUpdated }: HeroProps) {
                 </h1>
 
                 <div className="pt-10 flex items-center gap-6">
-                    <Button size="lg" className="rounded-full text-lg px-8 py-6 bg-blue-500 hover:bg-blue-600 text-white border-none">
+                    <Button size="lg" className="rounded-full text-lg px-8 py-6 bg-[#AAC4F5] hover:bg-[#7077A1] dark:bg-[#F6B17A] dark:hover:bg-[#F7A5A5] hover:drop-shadow-xl text-white border-none transition-colors cursor-pointer">
                         Download Resume
                     </Button>
                     <div className="text-sm text-muted-foreground">

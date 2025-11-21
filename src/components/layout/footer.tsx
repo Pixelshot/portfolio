@@ -8,7 +8,7 @@ export function Footer() {
                 {/* Top Section */}
                 <div className="flex flex-col md:flex-row justify-between items-start gap-12">
                     {/* Location / Time */}
-                    <div className="flex gap-8 text-base font-mono tracking-wider">
+                    <div className="flex gap-8 text-[14px] font-mono tracking-wider">
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full bg-[#FFF2C6] dark:bg-[#2D3250]" />
                             <div className="flex flex-col">

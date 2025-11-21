@@ -14,8 +14,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Synthwave Economist",
-  description: "Portfolio of an Economics major turned CS student.",
+  title: "The Cyber Economist",
+  description: "Portfolio of an Economics major turned CS student working in the CyberSecurity sector.",
 };
 
 export default function RootLayout({
