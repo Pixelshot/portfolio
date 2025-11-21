@@ -3,7 +3,7 @@ import { portfolioData } from "@/lib/data"
 export function Footer() {
     return (
         <footer className="bg-muted dark:bg-[#F6B17A] text-[#FFF2C6] drop-shadow-xl dark:drop-shadow-none dark:text-[#2D3250] py-12 px-4 md:px-8 mt-24 transition-colors duration-300">
-            <div className="container mx-auto flex flex-col h-full min-h-[400px] justify-between">
+            <div className="container mx-auto flex flex-col h-full min-h-[400px] justify-between gap-12">
 
                 {/* Top Section */}
                 <div className="flex flex-col md:flex-row justify-between items-start gap-12">
@@ -20,7 +20,7 @@ export function Footer() {
                     </div>
 
                     {/* Navigation */}
-                    <nav className="flex gap-8 text-lg font-medium">
+                    <nav className="flex flex-wrap gap-x-8 gap-y-4 text-lg font-medium">
                         <a href="#projects" className="hover:opacity-70 transition-opacity">Projects</a>
                         <a href="#contributions" className="hover:opacity-70 transition-opacity">Contributions</a>
                         <a href="#experience" className="hover:opacity-70 transition-opacity">Experience</a>
@@ -29,10 +29,10 @@ export function Footer() {
                 </div>
 
                 {/* Bottom Section */}
-                <div className="flex flex-col md:flex-row justify-between items-end gap-8 border-t border-border dark:border-[#2D3250]/20 pt-8">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 border-t border-border dark:border-[#2D3250]/20 pt-8">
                     {/* Logo */}
-                    <div className="flex items-center gap-4">
-                        <h1 className="text-6xl md:text-8xl font-bold tracking-tighter text-[#FFF8DE] dark:text-[#2D3250]">Pixelshot</h1>
+                    <div className="flex flex-col md:flex-row items-start md:items-center gap-4 w-full md:w-auto">
+                        <h1 className="text-4xl md:text-8xl font-bold tracking-tighter text-[#FFF8DE] dark:text-[#2D3250]">Pixelshot</h1>
                         <div className="flex flex-col text-sm font-mono leading-tight max-w-xs">
                             <span>A SOFTWARE ENGINEER</span>
                             <span>WORKING IN THE</span>
@@ -41,7 +41,7 @@ export function Footer() {
                     </div>
 
                     {/* Copyright / Graphic */}
-                    <div className="flex flex-col items-end gap-4">
+                    <div className="flex flex-col items-start md:items-end gap-4 w-full md:w-auto">
                         {/* Abstract Graphic Placeholder */}
                         {/* <div className="w-24 h-24 border border-[#E5E5E0]/30 dark:border-[#2D3250]/30 transform rotate-45 mb-4 hidden md:block" /> */}
                         <span className="text-sm text-[#FFF2C6] dark:text-[#2D3250]">

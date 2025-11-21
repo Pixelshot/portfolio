@@ -25,14 +25,14 @@ export function FeaturedProject({
             {/* Project Content - Split Layout */}
             <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
                 {/* Left: Text Content */}
-                <div className="lg:col-span-5 flex flex-col space-y-8 sticky top-24">
+                <div className="lg:col-span-5 flex flex-col space-y-8 lg:sticky lg:top-24">
                     <div className="inline-flex">
                         <span className="border border-foreground/20 px-3 py-1 text-xs font-mono uppercase tracking-wider">
                             IN PROGRESS
                         </span>
                     </div>
 
-                    <h3 className="text-6xl font-bold leading-none tracking-tight">
+                    <h3 className="text-4xl md:text-6xl font-bold leading-none tracking-tight">
                         {title}
                     </h3>
 

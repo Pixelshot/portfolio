@@ -70,7 +70,7 @@ export default async function Home() {
         <section id="projects" className="scroll-mt-24">
           {/* Projects Header */}
           <div className="mb-16">
-            <h2 className="text-[5rem] leading-[0.9] font-bold tracking-tight mb-4">
+            <h2 className="text-4xl md:text-[5rem] leading-[0.9] font-bold tracking-tight mb-4">
               Projects
               <sup className="text-sm font-normal ml-2 border rounded-full px-2 py-1 align-top top-4">2</sup>
             </h2>
@@ -110,7 +110,7 @@ export default async function Home() {
         {/* Contributions - Split Layout List */}
         <section id="contributions" className="space-y-24 scroll-mt-24">
           <div className="mb-12">
-            <h2 className="text-[5rem] leading-[0.9] font-bold tracking-tight mb-4">
+            <h2 className="text-4xl md:text-[5rem] leading-[0.9] font-bold tracking-tight mb-4">
               Contributions
               <sup className="text-sm font-normal ml-2 border rounded-full px-2 py-1 align-top top-4">
                 {portfolioData.projects.length}
@@ -142,7 +142,7 @@ export default async function Home() {
         {/* Experience - Single Split Section */}
         <section id="experience" className="scroll-mt-24">
           <div className="mb-12">
-            <h2 className="text-[5rem] leading-[0.9] font-bold tracking-tight mb-4">
+            <h2 className="text-4xl md:text-[5rem] leading-[0.9] font-bold tracking-tight mb-4">
               Experience
             </h2>
             <div className="w-full h-px bg-border mt-12 border-dashed" />

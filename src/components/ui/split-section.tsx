@@ -38,7 +38,7 @@ export function SplitSection({
         <div className={cn("w-full py-12", className)}>
             <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
                 {/* Left: Text Content */}
-                <div className={cn("flex flex-col space-y-8 sticky top-24", (image || galleryImages) ? "lg:col-span-5" : "lg:col-span-12 max-w-4xl")}>
+                <div className={cn("flex flex-col space-y-8 lg:sticky lg:top-24", (image || galleryImages) ? "lg:col-span-5" : "lg:col-span-12 max-w-4xl")}>
                     {badge && (
                         <div className="inline-flex">
                             <span className="border border-foreground/20 px-3 py-1 text-xs font-mono uppercase tracking-wider">
@@ -47,7 +47,7 @@ export function SplitSection({
                         </div>
                     )}
 
-                    <h3 className="text-5xl md:text-6xl font-bold leading-none tracking-tight">
+                    <h3 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-none tracking-tight">
                         {title}
                     </h3>
 
