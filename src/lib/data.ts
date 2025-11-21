@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 export const portfolioData = {
     personal: {
         name: "The Cyber Economist.",
-        headline: ["With Economic Logic,", "And Unyielding Defence."],
+        headline: ["With Economic Logic,", "And Unyielding Defence..."],
         bio: "Economics major turned CS student (3.8 CGPA). Started coding in 2012. I blend economic efficiency with retro-futurist aesthetics.",
         email: "hello@example.com",
         socials: [

@@ -10,26 +10,48 @@ interface HeroProps {
     lastUpdated: string
 }
 
+import { useState } from "react"
+import { Typewriter } from "@/components/ui/typewriter"
+
+// ... (HeroProps interface remains same)
+
 export function Hero({ version, lastUpdated }: HeroProps) {
+    const [typingIndex, setTypingIndex] = useState(0)
+
+    const nameWords = portfolioData.personal.name.split(" ")
+    const headlineLines = portfolioData.personal.headline
+    const allTextItems = [...nameWords, ...headlineLines]
+
     return (
         <section className="w-full min-h-[calc(100vh-8rem)] flex flex-col justify-center">
             <div className="space-y-6">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-tight">
-                    {portfolioData.personal.name.split(" ").map((word, i) => (
-                        <span key={i} className="block">{word}</span>
-                    ))}
-                    {portfolioData.personal.headline.map((line, i) => (
-                        <span key={i} className="block text-muted-foreground">
-                            {line}
-                            {i === portfolioData.personal.headline.length - 1 && (
-                                <motion.span
-                                    animate={{ opacity: [0, 1, 0] }}
-                                    transition={{ duration: 1, repeat: Infinity }}
-                                    className="inline-block ml-1 w-4 h-16 md:h-24 bg-[#AAC4F5] dark:bg-primary align-middle"
-                                />
-                            )}
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
+                    {nameWords.map((word, i) => (
+                        <span key={i} className="block">
+                            <Typewriter
+                                text={word}
+                                start={i <= typingIndex}
+                                showCursor={i === typingIndex}
+                                onComplete={() => setTypingIndex(prev => prev + 1)}
+                                speed={70}
+                            />
                         </span>
                     ))}
+                    {headlineLines.map((line, i) => {
+                        const globalIndex = nameWords.length + i
+                        const isLastItem = globalIndex === allTextItems.length - 1
+                        return (
+                            <span key={i} className="block text-muted-foreground">
+                                <Typewriter
+                                    text={line}
+                                    start={globalIndex <= typingIndex}
+                                    showCursor={globalIndex === typingIndex || (isLastItem && typingIndex >= allTextItems.length)}
+                                    onComplete={() => setTypingIndex(prev => prev + 1)}
+                                    speed={50}
+                                />
+                            </span>
+                        )
+                    })}
                 </h1>
 
                 <div className="pt-10 flex items-center gap-6">

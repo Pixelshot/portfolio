@@ -22,6 +22,7 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --radius: var(--radius);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
 :root {
