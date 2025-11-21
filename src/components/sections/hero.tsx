@@ -58,10 +58,10 @@ export function Hero({ version, lastUpdated }: HeroProps) {
 
                     <div className="pt-10 flex items-center gap-6">
                         <div className="relative group">
-                            <Button size="lg" className="rounded-full text-lg px-8 py-6 bg-[#AAC4F5] hover:bg-[#7077A1] dark:bg-[#F6B17A] dark:hover:bg-[#F7A5A5] hover:drop-shadow-xl text-white border-none transition-colors cursor-not-allowed">
+                            <Button size="lg" className="rounded-full text-lg px-8 py-6 bg-[#AAC4F5] hover:bg-[#7077A1] active:bg-[#7077A1] dark:bg-[#F6B17A] dark:hover:bg-[#F7A5A5] dark:active:bg-[#F7A5A5] hover:drop-shadow-xl text-white border-none transition-colors cursor-not-allowed">
                                 Download Resume
                             </Button>
-                            <span className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 text-sm font-medium text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                            <span className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 text-sm font-medium text-muted-foreground opacity-0 group-hover:opacity-100 group-active:opacity-100 group-focus-within:opacity-100 transition-opacity whitespace-nowrap">
                                 Coming Soon!
                             </span>
                         </div>
