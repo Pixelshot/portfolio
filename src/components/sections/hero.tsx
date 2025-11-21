@@ -74,7 +74,7 @@ export function Hero({ version, lastUpdated }: HeroProps) {
 
                 <div className="order-1 md:order-2 flex justify-center relative">
                     {/* Localized Background Grid */}
-                    <div className="absolute top-1/2 left-[60%] -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_80%_80%_at_60%_50%,#000_40%,transparent_100%)]" />
+                    <div className="absolute top-1/2 left-[60%] -translate-x-1/2 -translate-y-1/2 w-[160%] h-[160%] -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_80%_80%_at_60%_50%,#000_40%,transparent_100%)]" />
 
                     <div className="relative w-full max-w-[400px] md:max-w-[450px] aspect-[9/16]">
                         {/* Background Shape */}
