@@ -16,6 +16,16 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "The Cyber Economist",
   description: "Portfolio of an Economics major turned CS student working in the CyberSecurity sector.",
+  openGraph: {
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "The Cyber Economist Portfolio",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
