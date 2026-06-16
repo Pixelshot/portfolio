@@ -1,6 +1,16 @@
+"use client"
+
+import { useState, useEffect } from "react"
 import { portfolioData } from "@/lib/data"
 
 export function Footer() {
+    const [now, setNow] = useState<Date | null>(null)
+
+    useEffect(() => {
+        setNow(new Date())
+        const interval = setInterval(() => setNow(new Date()), 60_000)
+        return () => clearInterval(interval)
+    }, [])
     return (
         <footer className="bg-muted dark:bg-[#F6B17A] text-[#FFF2C6] drop-shadow-xl dark:drop-shadow-none dark:text-[#2D3250] py-12 px-4 md:px-8 mt-24 transition-colors duration-300">
             <div className="container mx-auto flex flex-col h-full min-h-[400px] justify-between gap-12">
@@ -12,7 +22,7 @@ export function Footer() {
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full bg-[#FFF2C6] dark:bg-[#2D3250]" />
                             <div className="flex flex-col">
-                                <span>{new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'Asia/Kuala_Lumpur', timeZoneName: 'short' })}</span>
+                                <span>{now ? now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'Asia/Kuala_Lumpur', timeZoneName: 'short' }) : ""}</span>
                                 <span>KUALA LUMPUR</span>
                                 <span>MALAYSIA</span>
                             </div>
@@ -45,7 +55,7 @@ export function Footer() {
                         {/* Abstract Graphic Placeholder */}
                         {/* <div className="w-24 h-24 border border-[#E5E5E0]/30 dark:border-[#2D3250]/30 transform rotate-45 mb-4 hidden md:block" /> */}
                         <span className="text-sm text-[#FFF2C6] dark:text-[#2D3250]">
-                            © {new Date().getFullYear()} Pixelshot
+                            © {now ? now.getFullYear() : new Date().getFullYear()} Pixelshot
                         </span>
                         <a
                             href="https://github.com/Pixelshot/portfolio"
