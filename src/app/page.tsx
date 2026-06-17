@@ -152,6 +152,9 @@ export default async function Home() {
             title="Career History"
             description="A timeline of my educational and professional milestones."
             badge="RESUME"
+            link="/resume.pdf"
+            linkLabel="Download CV"
+            downloadLink
           >
             <ExperienceCard />
           </SplitSection>

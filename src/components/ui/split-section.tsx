@@ -14,6 +14,7 @@ interface SplitSectionProps {
     tags?: string[]
     link?: string
     linkLabel?: string
+    downloadLink?: boolean
     badge?: string
     children?: React.ReactNode
     className?: string
@@ -29,6 +30,7 @@ export function SplitSection({
     tags,
     link,
     linkLabel = "View Project",
+    downloadLink = false,
     badge,
     children,
     className,
@@ -77,14 +79,25 @@ export function SplitSection({
 
                     {link && (
                         <div className="pt-4">
-                            <Button
-                                variant="link"
-                                className="p-0 h-auto text-lg font-medium hover:no-underline group text-[#8CA9FF] dark:text-primary"
-                                onClick={() => window.open(link, "_blank")}
-                            >
-                                {linkLabel}
-                                <ArrowUpRight className="ml-2 h-5 w-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
-                            </Button>
+                            {downloadLink ? (
+                                <a
+                                    href={link}
+                                    download
+                                    className="inline-flex items-center text-lg font-medium text-[#8CA9FF] dark:text-primary group hover:underline"
+                                >
+                                    {linkLabel}
+                                    <ArrowUpRight className="ml-2 h-5 w-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
+                                </a>
+                            ) : (
+                                <Button
+                                    variant="link"
+                                    className="p-0 h-auto text-lg font-medium hover:no-underline group text-[#8CA9FF] dark:text-primary"
+                                    onClick={() => window.open(link, "_blank")}
+                                >
+                                    {linkLabel}
+                                    <ArrowUpRight className="ml-2 h-5 w-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
+                                </Button>
+                            )}
                         </div>
                     )}
                 </div>
