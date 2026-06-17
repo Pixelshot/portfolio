@@ -29,28 +29,34 @@ export function Hero({ version, lastUpdated }: HeroProps) {
                 <div className="space-y-6 order-2 md:order-1">
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
                         {nameWords.map((word, i) => (
-                            <span key={i} className="block">
-                                <Typewriter
-                                    text={word}
-                                    start={i <= typingIndex}
-                                    showCursor={i === typingIndex}
-                                    onComplete={() => setTypingIndex(prev => prev + 1)}
-                                    speed={70}
-                                />
+                            <span key={i} className="block relative">
+                                <span className="invisible">{word}</span>
+                                <span className="absolute inset-0">
+                                    <Typewriter
+                                        text={word}
+                                        start={i <= typingIndex}
+                                        showCursor={i === typingIndex}
+                                        onComplete={() => setTypingIndex(prev => prev + 1)}
+                                        speed={35}
+                                    />
+                                </span>
                             </span>
                         ))}
                         {headlineLines.map((line, i) => {
                             const globalIndex = nameWords.length + i
                             const isLastItem = globalIndex === allTextItems.length - 1
                             return (
-                                <span key={i} className="block text-muted-foreground">
-                                    <Typewriter
-                                        text={line}
-                                        start={globalIndex <= typingIndex}
-                                        showCursor={globalIndex === typingIndex || (isLastItem && typingIndex >= allTextItems.length)}
-                                        onComplete={() => setTypingIndex(prev => prev + 1)}
-                                        speed={50}
-                                    />
+                                <span key={i} className="block text-muted-foreground relative">
+                                    <span className="invisible">{line}</span>
+                                    <span className="absolute inset-0">
+                                        <Typewriter
+                                            text={line}
+                                            start={globalIndex <= typingIndex}
+                                            showCursor={globalIndex === typingIndex || (isLastItem && typingIndex >= allTextItems.length)}
+                                            onComplete={() => setTypingIndex(prev => prev + 1)}
+                                            speed={25}
+                                        />
+                                    </span>
                                 </span>
                             )
                         })}
