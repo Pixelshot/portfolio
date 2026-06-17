@@ -64,7 +64,7 @@ export function ExperienceCard() {
                         <div className="text-base text-muted-foreground mt-1 font-mono">
                             <span>{job.company}</span>
                         </div>
-                        <p className="text-sm text-muted-foreground leading-relaxed mt-2">
+                        <p className="text-sm text-muted-foreground leading-relaxed mt-2 whitespace-pre-line">
                             {job.description}
                         </p>
                     </div>

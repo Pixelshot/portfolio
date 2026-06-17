@@ -55,10 +55,10 @@ export const portfolioData = {
             description: "Collaborated on cybersecurity initiatives encompassing threat analysis, security assessments, and defensive tooling. Applied CS and software engineering fundamentals to real-world cyber risk and mitigation strategies. Engaged in knowledge-sharing across network security, vulnerability assessment, and secure system design.",
         },
         {
-            title: "B.Sc. Computer Science (Hons)",
+            title: "B.Sc. Computer Science (Hons) (ODL)",
             company: "INTI International University",
             period: "Oct 2023 - Dec 2026",
-            description: "Software Engineering major. CGPA: 3.87 / 4.00 — Semester 14 of 16. Pursuing degree via the INTI working-adult programme while delivering real-world engineering work in parallel.",
+            description: "Software Engineering major.\nCGPA: 3.87 / 4.00 — Semester 14 of 16.",
         },
         {
             title: "Freelance Web Developer",
