@@ -57,7 +57,7 @@ export const portfolioData = {
         {
             title: "B.Sc. Computer Science (Hons) (ODL)",
             company: "INTI International University",
-            period: "Oct 2023 - Dec 2026",
+            period: "2023 - 2026",
             description: "Software Engineering major.\nCGPA: 3.87 / 4.00 — Semester 14 of 16.",
         },
         {
@@ -88,7 +88,13 @@ export const portfolioData = {
             title: "Bachelor of Arts (Economics)",
             company: "University of Queensland, Australia",
             period: "2007 - 2009",
-            description: "Economics Major. Preceded by Foundation Studies at International Education Services, Queensland, Australia (2006).",
+            description: "Economics Major.",
+        },
+        {
+            title: "Foundation Studies (Economics)",
+            company: "International Education Services, Queensland, Australia",
+            period: "Feb - Dec 2006",
+            description: "Pre-university foundation programme in Economics.",
         },
     ],
 };
